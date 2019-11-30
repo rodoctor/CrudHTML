@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Pessoa</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    
+</head>
+<body class="container">
+    
+    <h1 class="text-center">Pessoa</h1>
+    
+    <form class="form">
+
+        <div class="form-group">
+            <label for="codigo">Código</label>
+            <input type="number" id="codigo" class="form-control" required autofocus/>
+        </div>
+
+        <div class="form-group">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" class="form-control" required/>        
+        </div>  
+        
+        <div class="form-group">
+            <label for="data">Data Nascimento</label>
+            <input type="date" id="data" class="form-control"/>        
+        </div>    
+        
+        <div class="form-group">
+            <label for="salario">Salário</label>
+            <input type="number" min="1" step="1" id="salario" class="form-control" required/>
+        </div>
+
+        <button class="btn btn-primary" type="submit">Salvar</button>
+        <a class="btn btn-primary" href="./index.html">Voltar</a>
+    </form>
+
+    <br>
+    <br>
+    
+<script src="js/add.js"></script>
+<script src="js/localstorage.js"></script>
+</body>
+</html>
